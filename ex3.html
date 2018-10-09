@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var string = prompt("enter a string : ");
+    function countword(str) {
+        let str1 = str.trim();
+        let arr = str.split("");
+        let reg = /^\s$/;
+        let c = 0;
+        for (var i in arr){
+        if (reg.test(arr[i])){
+            c++;
+        }
+        } alert ("Số từ trong chuỗi vừa nhập là: " +c);
+    }
+    function countvowel(str){
+        let str1 = str.trim();
+        let arr = str.split("");
+        let reg = /^[eioua]$/;
+        let c = 0;
+        for (var i in arr){
+            if (reg.test(arr[i])){
+                c++;
+            }
+        }
+        alert ("Số nguyên âm trong chuỗi vừa nhập là: "+c);
+       // alert("số phụ âm trong chuỗi vừa nhập là : " + (arr.length - c.length));
+    }
+
+
+</script>
+</body>
+</html>

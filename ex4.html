@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function checkSecurityCode(str) {
+        const regexp = /^[A-Z][A-Za-z0-9]{8,}$/;
+        if(regexp.test(str)){
+            console.log("Security code is safe");
+        } else
+            console.log("Security code is not safe. please use other security code.")
+    }
+    checkSecurityCode("C0918g1");
+    checkSecurityCode("c0123456489");
+    checkSecurityCode("C0123456789HOIlamgi");
+</script>
+</body>
+</html>
